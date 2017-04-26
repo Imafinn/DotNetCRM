@@ -7,6 +7,8 @@ using System.Web.Mvc;
 namespace WebClient.Controllers
 {
     using Helper;
+    using DataModels.Entities;
+    using DataModels.Entities;
 
     public class EmployeeController : Controller
     {

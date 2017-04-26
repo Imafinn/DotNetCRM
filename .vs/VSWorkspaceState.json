@@ -3,8 +3,10 @@
     "",
     "\\DotNetCRM",
     "\\DotNetCRM\\Database",
-    "\\DotNetCRM\\Database\\Context"
+    "\\DotNetCRM\\Database\\Context",
+    "\\DotNetCRM\\WebClient",
+    "\\DotNetCRM\\WebClient\\Helper"
   ],
-  "SelectedNode": "\\DotNetCRM\\Database\\Context\\PcrmContext.cs",
+  "SelectedNode": "\\DotNetCRM\\WebClient\\Helper\\EmployeeRepository.cs",
   "PreviewInSolutionExplorer": false
 }
