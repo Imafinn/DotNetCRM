@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DotNetCRM",
+    "\\DotNetCRM\\Database",
+    "\\DotNetCRM\\Database\\Context"
   ],
+  "SelectedNode": "\\DotNetCRM\\Database\\Context\\PcrmContext.cs",
   "PreviewInSolutionExplorer": false
 }
