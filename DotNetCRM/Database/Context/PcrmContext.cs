@@ -1,7 +1,8 @@
-﻿using MySql.Data.Entity;
+﻿using DataModels.Entities;
+using MySql.Data.Entity;
 using System.Data.Entity;
 
-namespace PCRM.Database.Context
+namespace Database.Context
 {
     [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class PcrmContext : DbContext

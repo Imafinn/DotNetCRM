@@ -8,3 +8,5 @@
 /.vs/.Net CRM/v15
 /DotNetCRM/Database/obj
 /DotNetCRM/Database/bin
+/DotNetCRM/DataModels/bin/Debug
+/DotNetCRM/DataModels/obj
