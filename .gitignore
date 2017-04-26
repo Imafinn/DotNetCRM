@@ -5,3 +5,6 @@
 /DotNetCRM/DotNetCRM/bin/Debug
 /DotNetCRM/DotNetCRM/obj/Debug
 
+/.vs/.Net CRM/v15
+/DotNetCRM/Database/obj
+/DotNetCRM/Database/bin
