@@ -67,3 +67,14 @@ C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\obj\Debug\WebClient.
 C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\obj\Debug\WebClient.pdb
 C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\DataModels.dll
 C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\DataModels.pdb
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\Database.dll
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\MySql.Data.Entity.EF6.dll
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\EntityFramework.dll
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\MySql.Data.dll
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\Google.Protobuf.dll
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\Database.pdb
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\Database.dll.config
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\MySql.Data.Entity.EF6.xml
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\EntityFramework.xml
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\MySql.Data.xml
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\Google.Protobuf.xml

@@ -1,0 +1,1 @@
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\NUnit.Tests\obj\Debug\NUnit.Tests.csprojResolveAssemblyReference.cache

@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Database.DataAccess
 {
-    interface IPcrmDao
+    public interface IPcrmDao
     {
         Employee GetEmployee(int id);
+        List<Employee> GetAllEmployees();
     }
 }
