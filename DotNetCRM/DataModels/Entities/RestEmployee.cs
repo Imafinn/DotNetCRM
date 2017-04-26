@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
 
-namespace Restful.Entities
+namespace DataModels.Entities
 {
     public class RestEmployee
     {
