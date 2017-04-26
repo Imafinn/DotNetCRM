@@ -65,3 +65,5 @@ C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\Microsoft.AI.Web
 C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache
 C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\obj\Debug\WebClient.dll
 C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\obj\Debug\WebClient.pdb
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\DataModels.dll
+C:\Users\C136123\Source\Repos\DotNetCRM\DotNetCRM\WebClient\bin\DataModels.pdb
