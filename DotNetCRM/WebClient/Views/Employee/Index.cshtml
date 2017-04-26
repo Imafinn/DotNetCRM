@@ -1,0 +1,34 @@
+﻿@using Restful.Entities
+@model List<RestEmployee>
+
+@{
+    ViewBag.Title = "Employees";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Employees</h2>
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Department</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (RestEmployee e in Model)
+        {
+            <tr>
+                <td>@e.Id</td>
+                <td>@e.Firstname @e.Lastname</td>
+                <td>@e.Department</td>
+                <td>
+                    <div class="btn-group">
+                        @Html.ActionLink("Details", "Details", new { id = e.Id }, new { @class = "btn btn-default" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
