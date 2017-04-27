@@ -20,11 +20,27 @@ namespace Database.DataAccess
             }
         }
 
+        public List<Project> GetAllProjects()
+        {
+            using (_context = new PcrmContext())
+            {
+                return _context.Projects.ToList();
+            }
+        }
+
         public Employee GetEmployee(int id)
         {
             using (_context = new PcrmContext())
             {
                 return _context.Employees.Find(id);
+            }
+        }
+
+        public Project GetProject(int id)
+        {
+            using (_context = new PcrmContext())
+            {
+                return _context.Projects.Find(id);
             }
         }
     }

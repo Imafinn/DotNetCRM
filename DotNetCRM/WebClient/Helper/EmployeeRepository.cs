@@ -13,13 +13,18 @@ namespace WebClient.Helper
     /// </summary>
     public class EmployeeRepository : IEmployeeRepository
     {
-        IPcrmDao dao = new PcrmDao();
+        private IPcrmDao _dao;
+
+        public EmployeeRepository()
+        {
+            _dao = new PcrmDao();
+        }
 
         public List<RestEmployee> GetAll()
         {
             List<RestEmployee> employees = new List<RestEmployee>();
 
-            foreach(Employee e in dao.GetAllEmployees())
+            foreach(Employee e in _dao.GetAllEmployees())
             {
                 employees.Add(new RestEmployee(e));
             }
@@ -29,7 +34,7 @@ namespace WebClient.Helper
 
         public RestEmployee GetById(int id)
         {
-            return new RestEmployee(dao.GetEmployee(id));
+            return new RestEmployee(_dao.GetEmployee(id));
         }
     }
 }

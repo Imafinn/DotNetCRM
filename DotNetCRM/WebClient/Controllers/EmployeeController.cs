@@ -15,7 +15,7 @@ namespace WebClient.Controllers
 
         public EmployeeController()
         {
-            _repo = new EmployeeRepositoryFake();
+            _repo = new EmployeeRepository();
         }
         // GET: Employee
         [HttpGet]

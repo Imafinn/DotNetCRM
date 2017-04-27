@@ -148,6 +148,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\EmployeeRepository.cs" />
+    <Compile Include="Helper\ProjectRepository.cs" />
     <Compile Include="Helper\ProjectRepositoryFake.cs" />
     <Compile Include="Helper\EmployeeRepositoryFake.cs" />
     <Compile Include="Helper\IProjectRepository.cs" />

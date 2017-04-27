@@ -11,5 +11,7 @@ namespace Database.DataAccess
     {
         Employee GetEmployee(int id);
         List<Employee> GetAllEmployees();
+        Project GetProject(int id);
+        List<Project> GetAllProjects();
     }
 }

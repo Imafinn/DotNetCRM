@@ -14,7 +14,7 @@ namespace WebClient.Controllers
 
         public ProjectController()
         {
-            _repo = new ProjectRepositoryFake();
+            _repo = new ProjectRepository();
         }
         // GET: Project
         [HttpGet]
