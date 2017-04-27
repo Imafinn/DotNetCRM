@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using DataModels.Entities;
+using Database.DataAccess;
 
 
 namespace WebClient.Helper
@@ -10,22 +11,25 @@ namespace WebClient.Helper
     /// <summary>
     /// Fake repository to emulate database
     /// </summary>
-    public class EmployeeRepository
+    public class EmployeeRepository : IEmployeeRepository
     {
-        private static List<RestEmployee> _employees = new List<RestEmployee>()
-        {
-            new RestEmployee(){Id = 1, Department = "WILC", Firstname = "Lou", Lastname="Bahnhof", Salary=11},
-            new RestEmployee(){Id = 2, Department = "A", Firstname = "L", Lastname="B", Salary=69}
-        };
+        IPcrmDao dao = new PcrmDao();
 
-        public static List<RestEmployee> GetAll()
+        public List<RestEmployee> GetAll()
         {
-            return _employees;
+            List<RestEmployee> employees = new List<RestEmployee>();
+
+            foreach(Employee e in dao.GetAllEmployees())
+            {
+                employees.Add(new RestEmployee(e));
+            }
+
+            return employees;
         }
 
-        public static RestEmployee GetById(int id)
+        public RestEmployee GetById(int id)
         {
-            return _employees.Single(e => e.Id == id);
+            return new RestEmployee(dao.GetEmployee(id));
         }
     }
 }

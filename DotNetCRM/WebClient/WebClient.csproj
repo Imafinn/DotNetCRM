@@ -147,6 +147,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\EmployeeRepository.cs" />
+    <Compile Include="Helper\EmployeeRepositoryFake.cs" />
+    <Compile Include="Helper\IEmployeeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -210,6 +212,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{5f18bc28-d2c0-4037-b98a-4c581443375d}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataModels\DataModels.csproj">
       <Project>{bf3d5a9a-d9b4-4aae-a7c8-17ad5a62a777}</Project>
       <Name>DataModels</Name>

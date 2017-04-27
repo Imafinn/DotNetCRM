@@ -12,6 +12,14 @@ namespace Database.DataAccess
     {
         private PcrmContext _context;
 
+        public List<Employee> GetAllEmployees()
+        {
+            using (_context = new PcrmContext())
+            {
+                return _context.Employees.ToList();
+            }
+        }
+
         public Employee GetEmployee(int id)
         {
             using (_context = new PcrmContext())

@@ -8,15 +8,20 @@ namespace WebClient.Controllers
 {
     using Helper;
     using DataModels.Entities;
-    using DataModels.Entities;
 
     public class EmployeeController : Controller
     {
+        private IEmployeeRepository _repo;
+
+        public EmployeeController()
+        {
+            _repo = new EmployeeRepositoryFake();
+        }
         // GET: Employee
         [HttpGet]
         public ActionResult Index()
         {
-            List<RestEmployee> employees = EmployeeRepository.GetAll();
+            List<RestEmployee> employees = _repo.GetAll();
 
             return View(employees);
         }
@@ -25,7 +30,7 @@ namespace WebClient.Controllers
         [HttpGet]
         public ActionResult Details(int id)
         {
-            RestEmployee employee = EmployeeRepository.GetById(id);
+            RestEmployee employee = _repo.GetById(id);
 
             return View(employee);
         }
