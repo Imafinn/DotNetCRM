@@ -7,6 +7,7 @@ using System.Web;
 
 namespace DataModels.Entities
 {
+    [DataContract(Namespace="http://localhost:8080/pcrm")]
     public class RestEmployee
     {
         public RestEmployee()
@@ -22,10 +23,15 @@ namespace DataModels.Entities
             Salary = e.Salary;
         }
 
+        [DataMember]
         public int Id { get; set; }
+        [DataMember]
         public string Firstname { get; set; }
+        [DataMember]
         public string Lastname { get; set; }
+        [DataMember]
         public string Department { get; set; }
+        [DataMember]
         public int Salary { get; set; }
     }
 }
