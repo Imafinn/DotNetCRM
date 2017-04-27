@@ -8,6 +8,8 @@ namespace WebClient.Controllers
 {
     using Helper;
     using DataModels.Entities;
+    using System.IO;
+    using System.Xml.Linq;
 
     public class EmployeeController : Controller
     {
@@ -33,6 +35,38 @@ namespace WebClient.Controllers
             RestEmployee employee = _repo.GetById(id);
 
             return View(employee);
+        }
+
+        [HttpGet]
+        public ActionResult Export()
+        {
+            string path = Directory.GetCurrentDirectory();
+            string fileName = "employees.xml";
+
+            XDocument doc = new XDocument();
+            XElement employees = new XElement("Employees",
+                                from employee in _repo.GetAll()
+                                select new XElement("Employee",
+                                                new XAttribute("Id", employee.Id),
+                                                new XAttribute("Firstname", employee.Firstname),
+                                                new XAttribute("Lastname", employee.Lastname),
+                                                new XAttribute("Department", employee.Department),
+                                                new XAttribute("Salary", employee.Salary)));
+
+            doc.Add(employees);
+            doc.Save(path + "/" + fileName);
+
+            // .xml File für Download bereitstellen
+            Response.Clear();
+            Response.AddHeader("content-disposition", "attachment; filename=" + fileName);
+            Response.WriteFile(path + "/" + fileName);
+            Response.ContentType = "";
+            Response.End();
+
+            //return File(System.IO.File.ReadAllBytes("C:/eplatform/projects.xml"), "application/xml");
+            //return Content(doc.ToString());
+            return RedirectToAction("Index", "Employee");
+            //return Redirect("~/Project");
         }
 
         // GET: Employee/Create
