@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DotNetCRM",
+    "\\DotNetCRM\\Database",
+    "\\DotNetCRM\\Database\\Context",
+    "\\DotNetCRM\\WebClient",
+    "\\DotNetCRM\\WebClient\\Helper"
   ],
+  "SelectedNode": "\\DotNetCRM\\WebClient\\Helper\\EmployeeRepository.cs",
   "PreviewInSolutionExplorer": false
 }
