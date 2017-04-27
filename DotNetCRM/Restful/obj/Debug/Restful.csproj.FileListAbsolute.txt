@@ -1,0 +1,16 @@
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\Restful.dll.config
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\Restful.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\Restful.pdb
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\Database.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\DataModels.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\EntityFramework.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\MySql.Data.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\Database.pdb
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\Database.dll.config
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\DataModels.pdb
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\EntityFramework.xml
+C:\CSharp\.Net CRM\DotNetCRM\Restful\bin\Debug\MySql.Data.xml
+C:\CSharp\.Net CRM\DotNetCRM\Restful\obj\Debug\Restful.csprojResolveAssemblyReference.cache
+C:\CSharp\.Net CRM\DotNetCRM\Restful\obj\Debug\Restful.dll
+C:\CSharp\.Net CRM\DotNetCRM\Restful\obj\Debug\Restful.pdb

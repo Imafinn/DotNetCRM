@@ -67,6 +67,10 @@
       <Project>{bf3d5a9a-d9b4-4aae-a7c8-17ad5a62a777}</Project>
       <Name>DataModels</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Restful\Restful.csproj">
+      <Project>{B551778F-741A-46CC-98A0-1C5D3F34FBAF}</Project>
+      <Name>Restful</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

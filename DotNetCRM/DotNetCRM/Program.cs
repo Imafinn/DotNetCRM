@@ -1,8 +1,10 @@
 ﻿using Database.Context;
 using DataModels.Entities;
+using Restful;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel.Description;
 using System.ServiceModel.Web;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,36 +17,36 @@ namespace DotNetCRM
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Read Database:");
-            ReadDatabase();
-            ReadKey();
+            //Console.WriteLine("Read Database:");
+            //ReadDatabase();
+            //ReadKey();
 
             //Console.WriteLine("\nInsert Employee");
             //InsertEmployee();
             //ReadKey();
 
-            //StartRestful();
+            StartRestful();
 
             ReadKey();
             _host.Close();
         }
 
-        //private static void StartRestful()
-        //{
-        //    _host = new WebServiceHost(typeof(PcrmService));
-        //    try
-        //    {
-        //        _host.Open();
-        //        Console.WriteLine($"{_host.Description.ServiceType} is up and running with these endpoints:");
-        //        foreach (ServiceEndpoint se in _host.Description.Endpoints)
-        //            Console.WriteLine(se.Address);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e);
-        //        _host.Abort();
-        //    }
-        //}
+        private static void StartRestful()
+        {
+            _host = new WebServiceHost(typeof(PcrmService));
+            try
+            {
+                _host.Open();
+                Console.WriteLine($"{_host.Description.ServiceType} is up and running with these endpoints:");
+                foreach (ServiceEndpoint se in _host.Description.Endpoints)
+                    Console.WriteLine(se.Address);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                _host.Abort();
+            }
+        }
 
         private static void InsertEmployee()
         {
