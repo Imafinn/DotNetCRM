@@ -1,0 +1,36 @@
+﻿@using DataModels.Entities
+@model List<RestProject>
+
+@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Projects</h2>
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Status</td>
+            <td>Volume</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (RestProject p in Model)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Name</td>
+                <td>@p.Status</td>
+                <td>@p.Volume</td>
+                <td>
+                    <div class="btn-group">
+                        @Html.ActionLink("Details", "Details", new { id = p.Id }, new { @class = "btn btn-default" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

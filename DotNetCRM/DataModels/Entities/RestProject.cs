@@ -10,6 +10,10 @@ namespace DataModels.Entities
 {
     public class RestProject
     {
+        public RestProject()
+        {
+        }
+
         public RestProject(Project p)
         {
             Id = p.Id;
